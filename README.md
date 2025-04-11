@@ -1,6 +1,6 @@
 # Embedded_C_using_STM32
 
-The project contains Host as well as target STM32 Discovery board C source codes which coveres basic concepts in C essential for embedded systems. 
+The project contains C source codes for Windows system using GCC compiler as well as target STM32F411VE Discovery board which coveres basic concepts in C essential for embedded systems.
 
 STM32 Cube IDE link:
 https://www.st.com/en/development-tools/stm32cubeide.html
