@@ -139,7 +139,7 @@ long long -> 8 bytes<br>
 pointer variable data type decides the type of operation performed on the variable<br>
 irrespective of pointer data type, the compiler will reserve 8 bytes for pointer variable<br>
 In case of pointer variable definition, 8 bytes are allocated by compiler to the variable<br>
-* added to differentiate between pointer variable and normal variable<br>
+"*" added to differentiate between pointer variable and normal variable<br>
 -ve values are also considered as true<br>
 pointer address can also be incremented by using unary operators<br>
 since address is 8 bytes so use unsigned long for storing address<br>
@@ -147,7 +147,7 @@ since address is 8 bytes so use unsigned long for storing address<br>
 
 Precedence:<br>
 comparison operators have lower precedence over arithmetic operators<br>
-* and / have same precedence. Associativity is from left to right<br>
+"*" and / have same precedence. Associativity is from left to right<br>
 
 Importance of <stdint.h><br>
 uintptr_t, intmax_t, uintmax_t<br>
