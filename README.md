@@ -1,4 +1,4 @@
-# Embedded_C_using_STM32
+# Embedded_C_using_STM32_and_GCC
 
 The project contains C source codes for Windows system using GCC compiler as well as target STM32F411VE Discovery board which coveres basic concepts in C essential for embedded systems.
 
