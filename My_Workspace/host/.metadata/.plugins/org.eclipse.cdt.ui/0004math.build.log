@@ -1,0 +1,22 @@
+17:04:42 **** Incremental Build of configuration Debug for project 0004math ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:13:17: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'long long int' [-Wformat=]
+   13 |  printf("Mul : %X\n",math_mul(0x0FFF1111,0x0FFF1111));
+      |                ~^    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                 |    |
+      |                 |    long long int
+      |                 unsigned int
+      |                %I64X
+..\main.c:13:17: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'long long int' [-Wformat=]
+   13 |  printf("Mul : %X\n",math_mul(0x0FFF1111,0x0FFF1111));
+      |                ~^    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                 |    |
+      |                 |    long long int
+      |                 unsigned int
+      |                %I64X
+gcc -o 0004math.exe main.o math.o 
+
+17:04:42 Build Finished. 0 errors, 2 warnings. (took 780ms)
+

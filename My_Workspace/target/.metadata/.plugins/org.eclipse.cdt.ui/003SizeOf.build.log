@@ -1,0 +1,31 @@
+17:49:05 **** Incremental Build of configuration Debug for project 003SizeOf ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F411VETx -DSTM32 -DSTM32F4 -DSTM32F411E_DISCO -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -save-temps -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F411VETx -DSTM32 -DSTM32F4 -DSTM32F411E_DISCO -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -save-temps -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F411VETx -DSTM32 -DSTM32F4 -DSTM32F411E_DISCO -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -save-temps -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+../Src/main.c: In function 'main':
+../Src/main.c:27:9: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   27 |         printf("Size of char data type is %u\n", sizeof(char));
+      |         ^~~~~~
+../Src/main.c:20:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   19 | #include <stdint.h>
+  +++ |+#include <stdio.h>
+   20 | 
+../Src/main.c:27:9: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+   27 |         printf("Size of char data type is %u\n", sizeof(char));
+      |         ^~~~~~
+../Src/main.c:27:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+arm-none-eabi-gcc -o "003SizeOf.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Embedded_C\My_Workspace\target\003SizeOf\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="003SizeOf.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 003SizeOf.elf
+ 
+arm-none-eabi-size  003SizeOf.elf 
+arm-none-eabi-objdump -h -S 003SizeOf.elf  > "003SizeOf.list"
+   text	   data	    bss	    dec	    hex	filename
+   5148	     92	   1900	   7140	   1be4	003SizeOf.elf
+Finished building: default.size.stdout
+ 
+Finished building: 003SizeOf.list
+ 
+
+17:49:11 Build Finished. 0 errors, 2 warnings. (took 5s.899ms)
+

@@ -1,0 +1,25 @@
+18:53:54 **** Rebuild of configuration Debug for project 009Pointer ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o pointer_arithmetic.o "..\\pointer_arithmetic.c" 
+gcc -o 009Pointer.exe pointer_arithmetic.o 
+Info: Nothing to build for 009Pointer
+18:55:18 **** Incremental Build of configuration Debug for project 009Pointer ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o pointer_arithmetic.o "..\\pointer_arithmetic.c" 
+gcc -o 009Pointer.exe pointer_arithmetic.o 
+18:56:09 **** Incremental Build of configuration Debug for project 009Pointer ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o pointer_arithmetic.o "..\\pointer_arithmetic.c" 
+gcc -o 009Pointer.exe pointer_arithmetic.o 
+18:56:44 **** Incremental Build of configuration Debug for project 009Pointer ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o pointer_arithmetic.o "..\\pointer_arithmetic.c" 
+gcc -o 009Pointer.exe pointer_arithmetic.o 
+18:57:02 **** Incremental Build of configuration Debug for project 009Pointer ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o pointer_arithmetic.o "..\\pointer_arithmetic.c" 
+gcc -o 009Pointer.exe pointer_arithmetic.o 
+18:57:46 **** Incremental Build of configuration Debug for project 009Pointer ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o pointer_arithmetic.o "..\\pointer_arithmetic.c" 
+gcc -o 009Pointer.exe pointer_arithmetic.o 
